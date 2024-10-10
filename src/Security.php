@@ -28,13 +28,13 @@ class Security
      * Scan XML string for potential XXE and XEE attacks
      *
      * @param   string $xml
-     * @param   DomDocument|null $dom
      * @param   int $libXmlConstants additional libxml constants to pass in
      * @param   callable $callback the callback to use to create the dom element
-     * @throws  Exception\RuntimeException
+     * @param   DomDocument|null $dom
      * @return  SimpleXMLElement|DomDocument|boolean
+     * @throws  Exception\RuntimeException
      */
-    private static function scanString($xml, DOMDocument|null $dom = null, $libXmlConstants, callable $callback)
+    private static function scanString($xml, $libXmlConstants, callable $callback, DOMDocument|null $dom = null)
     {
         // If running with PHP-FPM we perform an heuristic scan
         // We cannot use libxml_disable_entity_loader because of this bug

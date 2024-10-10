@@ -5,6 +5,8 @@
     bootstrap="vendor/autoload.php"
     colors="true"
     failOnDeprecation="true"
+    failOnWarning="true"
+    failOnNotice="true"
 >
     <testsuites>
         <testsuite name="laminas-xml Test Suite">
