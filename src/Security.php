@@ -122,7 +122,7 @@ class Security
         $callback = function ($xml, $dom, $constants) {
             return $dom->loadXml($xml, $constants);
         };
-        return self::scanString($xml, $dom, $libXmlConstants, $callback);
+        return self::scanString($xml, $libXmlConstants, $callback, $dom);
     }
 
     /**
@@ -139,7 +139,7 @@ class Security
         $callback = function ($html, $dom, $constants) {
             return $dom->loadHtml($html, $constants);
         };
-        return self::scanString($html, $dom, $libXmlConstants, $callback);
+        return self::scanString($html, $libXmlConstants, $callback, $dom);
     }
 
     /**
