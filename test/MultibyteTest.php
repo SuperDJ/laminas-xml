@@ -16,7 +16,7 @@ class MultibyteTest extends TestCase
     /**
      * @psalm-return array<array-key, array{0: string, 1: string, 2: int}>
      */
-    public function multibyteEncodings(): array
+    public static function multibyteEncodings(): array
     {
         return [
             'UTF-16LE' => ['UTF-16LE', pack('CC', 0xff, 0xfe), 3],

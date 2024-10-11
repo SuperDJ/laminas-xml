@@ -1,4 +1,4 @@
-/.phpunit.result.cache
+/.phpunit.cache
 /clover.xml
 /coveralls-upload.json
 /phpunit.xml
