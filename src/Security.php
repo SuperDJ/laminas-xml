@@ -5,6 +5,9 @@ namespace Laminas\Xml;
 use DOMDocument;
 use SimpleXMLElement;
 
+/**
+ * @final
+ */
 class Security
 {
     const ENTITY_DETECT = 'Detected use of ENTITY in XML, disabled to prevent XXE/XEE attacks';
