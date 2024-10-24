@@ -24,8 +24,7 @@
     "require": {
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
         "ext-dom": "*",
-		"ext-libxml": "*",
-		"ext-simplexml": "*"
+		"ext-libxml": "*"
 	},
     "require-dev": {
         "laminas/laminas-coding-standard": "~1.0.0",
